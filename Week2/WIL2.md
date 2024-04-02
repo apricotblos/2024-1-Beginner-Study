@@ -29,7 +29,7 @@
 ### (3) Rebase and Merge
 #### + A, B, C 커밋의 base를 재설정
 #### + 모두 새로운 커밋으로 변경
-#### + commit hast*가 변경됨
+#### + commit hash*가 변경됨
 #### + 무수한 충돌을 경험할 수 있으니 사용에 주의
 ##### * commit hash : Commit Id는 commit의 식별을 위해 사용하는 40자 길이의 16진수임. 중복 확률을 2의 80제곱 분의 1이며 SHA-1 해시 합수를 사용
 ##### + git은 분산 버전 관리 시스템이기 때문에 어떤 상황에도 commit을 할 수 있어야 함. hash를 사용하면 온/오프라인 어떤 환경에서도 commit이 가능하므로 Commit Id를 hash로 사용함.
