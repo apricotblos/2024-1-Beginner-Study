@@ -11,7 +11,7 @@
 ### __{1} Git Flow__
 #### - 2010년 Vincent Driessen이 고안
 #### - 브랜치 관리 위한 전략
-![git flow]("C:\Users\carro\OneDrive\바탕 화면\git flow.jpeg")
+!("C:\Users\carro\OneDrive\바탕 화면\git flow.jpeg")
 ##### > 출처 : https://m.blog.naver.com/bjho606/222850246830
 #### __(1) 브랜치 종류__
 #### - Main Branches
