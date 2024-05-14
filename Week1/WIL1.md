@@ -1,42 +1,25 @@
-# 2024.03.19 GDSC 스터디 정리
-## 1. GIT HUB를 쓰는 이유
-###  - 파일을 관리하기 위해
-###  - 파일의 수정 로그를 알기 위해
-
-## 2. 파일의 생명주기
-###  - untracked
-###  - tracked = unmodified, modified, staged
-
-## 3. GIT의 영역
-###     (1) Local
-####        - Working Directory
-####         - Staging Area
-####         - Local Repo
-###      (2) Remote
-####         - Remote Repo
-
-## 4. GIT 관련 명령어
-###      + git init = 디렉토리에 Git 저장소 생성, 숨겨진 파일 .git 생성
-###      + rm -r .git = git으로 관리 그만하기
-###      + git add = Git으로 관리할 대상 등록
-####     + git add . = 모든 파일 한 번에, git add <파일명> = 하나씩, git rm --cacjed <file> = unstaged로 되돌리기
-###      + git commit = 파일 수정 후 로컬 저장소로 옮기기
-###      + git config --global user.name "<깃허브 이름>", git config --global user.email "<깃허브이메일>" =  깃허브와 연동
-###      - git commit -m "<commit message>"
-###      * type
-###         + feat : 새로운 기능 추가
-###         + refactor : 기존 코드 개선
-###         + fix : 버그 수정 
-###         + chore : 코드 외의 설정 바꿈
-###         + docs : 문서화
-###         + test : 테스트 코드
-###     - GitHub에 파일 올리기
-###         * 올리기 전에
-###             + git remote add origin <주소>
-###             + git branch -M main
-###             + git push -u origin main
-###         * 올리기
-###             + git add <파일명>
-###             + git commit -m "commit message"
-###             + git push origin main
-<https://github.com/apricotblos/apricotblos/blob/main/README.md>
+# 2024.05.07 GDSC 기초 웹 스터디 정리
+## 1. 웹의 역사
+### {1} LAMP 스택
+#### - Lambda - Linux 운영체제
+#### - API Gateway - Apache 웹 서버
+#### - MySQL
+#### - PHP - php 언어
+#### => 데이터 베이스에서 필요한 데이터를 불러와 웹 서버에서 HTML 페이지를 모두 만들어 클라이언튼에 제공함
+#### => 웹 브라우저는 HTML 다운로드 및 정보 제공의 역할만 하며 JavaScript은 정보 입력과 같은 부수적인 역할만 수행함
+### {2} 제이쿼리
+#### - HTML 속에서 클라이언트에서 동작할 수 있는 스크립트 언어를 동작할 수 있게 하는 라이브러리
+#### - JavaScript를 더욱 쉽게 작성할 수 있도록 사용됨
+#### - ES5(ECMAScript5)이 채택하여 브라우저에 정적 정보를 저장할 수 있는 로컬 스토리지를 개발
+##### + JavaScript는 DOM(Document Object Model)을 수정해 다향한 웹의 인터렉션을 구현하기 시작하였으며, DOM을 중심으로 브라우저가 움직이기 시작하며 페이지 일부만을 업데이트하여 동적으로 서버와 통신할 수 있게 됨
+### {3} Facebook
+#### - 많은 유저가 사용하는 세계적인 소셜 네트워크 서비스였기에 속도가 중요함
+#### -> 서버에 있는 모든 내용을 랜더링하고자 했으며, 로드 속도를 빠르게 하기 위해 번들의 크기를 줄여야 했음
+#### -> 자바스크립트가 늘어날 수록 코드의 크기가 늘어났기 때문에 자바스크립트의 코드를 최소화하고자 했으나 한계가 존재함
+#### - 2011년의 페이스북에서는 '좋아요'를 클릭하면 API Gateway에서 MySQL로 좋아요 클릭을 반영할 것을 요청하고, MySQL에서 다시 API Gateway로 서버 랜더링을 요청하면 API Gatewqy가 화면을 깜빡이며 반영함
+### {4} React
+#### - 페이스북이 개발 시작
+#### - 상태(state)의 개념을 활용하여 상태에 따른 UI를 선언적으로 구현
+#### - JSX 문법을 활용하여 JavaScript의 코드 규모를 축소
+#### * 초기에는 관심사 분리 원칙에 어긋난다며 불신했지만, 선언적으로 컴포넌트를 작성할 수 있음으로써 가상 DOM을 통해 DOM의 효율적 조장이 가능하여 인정받음
+#### * 웹 프론트엔드 개발은 React가 점령했다고 해도 과언이 아닐 정도로 활발하게 사용되고 있음
